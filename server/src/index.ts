@@ -9,7 +9,11 @@ env.config();
 const port = process.env.PORT || 8001;
 const mongoUri = process.env.MONGODB_URI;
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://assignment-hd.netlify.app'],
+    origin: [
+      'http://localhost:5173', 
+      'https://assignment-hd.netlify.app',
+      'https://assignment-highway-delite.netlify.app'
+    ],
     optionsSuccessStatus: 200
   };
 if (!mongoUri) {
